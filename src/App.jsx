@@ -3,6 +3,8 @@ import './styles/global.css';
 import './styles/custom.css';
 import { Container, Section, Hero, Footer } from 'react-bulma-components';
 import TodoList from './components/TodoList.jsx';
+import TodoItem from './components/TodoItem.jsx';
+import TodoForm from './components/TodoForm.jsx';
 
 function App() {
   return (
