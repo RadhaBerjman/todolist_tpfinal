@@ -1,17 +1,15 @@
+// src/App.jsx
 import 'bulma/css/bulma.min.css';
 import './styles/global.css';
 import './styles/custom.css';
-import { Container, Section, Hero, Footer } from 'react-bulma-components';
 import TodoList from './components/TodoList.jsx';
-import TodoItem from './components/TodoItem.jsx';
-import TodoForm from './components/TodoForm.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Hero color="primary" size="medium">
-        <Hero.Body>
-          <Container>
+      <section className="hero is-primary is-medium">
+        <div className="hero-body">
+          <div className="container">
             <div className="has-text-centered">
               <h1 className="title is-size-1 has-text-white mb-3">
                 📋 To Do List 🤗
@@ -26,22 +24,22 @@ function App() {
                 <span className="tag is-light">Responsive</span>
               </div>
             </div>
-          </Container>
-        </Hero.Body>
-      </Hero>
+          </div>
+        </div>
+      </section>
       
-      <Section>
-        <Container>
+      <section className="section">
+        <div className="container">
           <div className="card shadow-lg">
             <div className="card-content p-5">
               <TodoList />
             </div>
           </div>
-        </Container>
-      </Section>
+        </div>
+      </section>
       
-      <Footer>
-        <Container className="has-text-centered">
+      <footer className="footer">
+        <div className="container has-text-centered">
           <div className="content">
             <p>
               <strong>To Do List App</strong> 
@@ -52,8 +50,8 @@ function App() {
               Desarrollado con ❤️ usando React + Bulma + Yarn
             </p>
           </div>
-        </Container>
-      </Footer>
+        </div>
+      </footer>
     </div>
   );
 }
