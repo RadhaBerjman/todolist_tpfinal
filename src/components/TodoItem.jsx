@@ -1,7 +1,7 @@
 // src/components/TodoItem.jsx
 import { useState } from "react";
 
-const TodoItem = ({ 
+const TodoItem = ({  // Props recibidos desde TodoList
   todo, 
   onDelete, 
   onToggleComplete, 
@@ -10,91 +10,110 @@ const TodoItem = ({
   onStartEditing,
   onCancelEditing 
 }) => {
-  const [editText, setEditText] = useState(todo.text);
+  const [editText, setEditText] = useState(todo.text); // Estado local para el texto en edición
 
-  const handleSave = () => {
-    onUpdate(todo.id, editText);
+  const handleSave = () => { // Guarda los cambios realizados
+    if (editText.trim() === todo.text) {// Si no hay cambios, simplemente cancela la edición
+      onCancelEditing(); 
+      return;
+    }
+    onUpdate(todo.id, editText); // Llama a la función para actualizar la tarea con updateTodo
+  };
+
+  const handleKeyDown = (e) => { // Maneja teclas para guardar o cancelar
+    if (e.key === 'Enter') handleSave(); // Guarda al presionar Enter
+    if (e.key === 'Escape') onCancelEditing(); // Cancela al presionar Escape
   };
 
   return (
-    <div className={`box mb-3 ${todo.completed ? 'has-background-light' : ''}`}>
-      <div className="columns is-vcentered">
+    <div className={`box is-shadowless py-3 mb-2 ${todo.completed ? 'has-background-light' : ''}`}>
+      <div className="is-flex is-align-items-center">
         {/* Checkbox */}
-        <div className="column is-narrow">
-          <button 
-            className={`button ${todo.completed ? 'is-success' : 'is-light'}`}
-            onClick={() => onToggleComplete(todo.id)}
-          >
-            <span className="icon">
-              <i className="fas fa-check"></i>
-            </span>
-          </button>
-        </div>
+        <button 
+          className={`button is-small mr-3 ${todo.completed ? 'is-success is-light' : 'is-light'}`}
+          onClick={() => onToggleComplete(todo.id)}
+          title={todo.completed ? "Marcar como pendiente" : "Marcar como completada"}
+        >
+          <span className="icon is-small">
+            <i className={`fas fa-${todo.completed ? 'check-circle' : 'circle'}`}></i>
+          </span>
+        </button>
 
-        {/* Texto o input de edición */}
-        <div className="column">
+        {/* Contenido */}
+        <div className="is-flex-grow-1">
           {isEditing ? (
             <div className="field has-addons">
               <div className="control is-expanded">
                 <input
-                  className="input"
+                  className="input is-small"
                   type="text"
                   value={editText}
                   onChange={(e) => setEditText(e.target.value)}
-                  onKeyDown={(e) => e.key === "Enter" && handleSave()}
+                  onKeyDown={handleKeyDown}
+                  autoFocus
                 />
               </div>
               <div className="control">
-                <button className="button is-success" onClick={handleSave}>
-                  <span className="icon">
-                    <i className="fas fa-save"></i>
+                <button className="button is-small is-success" onClick={handleSave}>
+                  <span className="icon is-small">
+                    <i className="fas fa-check"></i>
                   </span>
-                  <span className="ml-1">Guardar</span>
                 </button>
               </div>
               <div className="control">
-                <button className="button is-light" onClick={onCancelEditing}>
-                  <span className="icon">
+                <button className="button is-small is-light" onClick={onCancelEditing}>
+                  <span className="icon is-small">
                     <i className="fas fa-times"></i>
                   </span>
-                  <span className="ml-1">Cancelar</span>
                 </button>
               </div>
             </div>
           ) : (
-            <p style={{ 
-              textDecoration: todo.completed ? "line-through" : "none",
-              opacity: todo.completed ? 0.7 : 1 
-            }}>
-              {todo.text}
+            <div className="is-flex is-align-items-center">
+              <span 
+                className={`${todo.completed ? 'has-text-grey' : ''}`}
+                style={{ 
+                  textDecoration: todo.completed ? 'line-through' : 'none',
+                  flexGrow: 1
+                }}
+              >
+                {todo.text}
+              </span>
               {todo.completed && (
-                <span className="tag is-success ml-2">Completada</span>
+                <span className="tag is-success is-light is-small ml-2">
+                  <span className="icon is-small">
+                    <i className="fas fa-check"></i>
+                  </span>
+                </span>
               )}
-            </p>
+            </div>
           )}
         </div>
 
-        {/* Botones */}
-        <div className="column is-narrow">
-          <div className="buttons">
-            {!isEditing && (
-              <>
-                <button className="button is-warning" onClick={onStartEditing}>
-                  <span className="icon">
-                    <i className="fas fa-edit"></i>
-                  </span>
-                  <span className="ml-1">Editar</span>
-                </button>
-                <button className="button is-danger" onClick={() => onDelete(todo.id)}>
-                  <span className="icon">
-                    <i className="fas fa-trash"></i>
-                  </span>
-                  <span className="ml-1">Eliminar</span>
-                </button>
-              </>
-            )}
+        {/* Botones de acción */}
+        {!isEditing && (
+          <div className="buttons are-small ml-3">
+            <button 
+              className="button is-warning is-light" 
+              onClick={onStartEditing}
+              disabled={todo.completed}
+              title={todo.completed ? "No se pueden editar tareas completadas" : "Editar"}
+            >
+              <span className="icon is-small">
+                <i className="fas fa-edit"></i>
+              </span>
+            </button>
+            <button 
+              className="button is-danger is-light" 
+              onClick={() => onDelete(todo.id)}
+              title="Eliminar"
+            >
+              <span className="icon is-small">
+                <i className="fas fa-trash"></i>
+              </span>
+            </button>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
