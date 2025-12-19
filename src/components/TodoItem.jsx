@@ -35,8 +35,8 @@ const TodoItem = ({  // Props recibidos desde TodoList
           title={todo.completed ? "Marcar como pendiente" : "Marcar como completada"}
         >
           <span className="icon is-small">
-            <i className={`fas fa-${todo.completed ? 'check-circle' : 'circle'}`}></i>
-          </span>
+          <i className={`fas fa-${todo.completed ? 'check' : 'square'}`}></i>          
+        </span>
         </button>
 
         {/* Contenido */}
@@ -54,7 +54,7 @@ const TodoItem = ({  // Props recibidos desde TodoList
                 />
               </div>
               <div className="control">
-                <button className="button is-small is-success" onClick={handleSave}>
+                <button className="button is-small is-success" onClick={handleSave}> 
                   <span className="icon is-small">
                     <i className="fas fa-check"></i>
                   </span>
@@ -100,7 +100,7 @@ const TodoItem = ({  // Props recibidos desde TodoList
               title={todo.completed ? "No se pueden editar tareas completadas" : "Editar"}
             >
               <span className="icon is-small">
-                <i className="fas fa-edit"></i>
+                <i className="fas fa-pencil-alt"></i>
               </span>
             </button>
             <button 
