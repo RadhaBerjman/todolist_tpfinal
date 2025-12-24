@@ -8,9 +8,9 @@ function App() {
   return ( 
     <div className="App"> 
       {/* HEADER */}
-      <section className="hero is-primary is-small"> 
+      <section className="hero is-primary is-small is-fullwidth"> 
         <div className="hero-body py-4">
-          <div className="container">
+          <div className="container is-fluid">
             <div className="has-text-centered">
               <h1 className="title is-size-3 has-text-white mb-2">
                 📋 To Do List 😌💡
@@ -41,14 +41,14 @@ function App() {
       </section>
       
       {/* FOOTER */}
-      <footer className="footer py-4">
+      <footer className="footer py-4 full-width">
         <div className="container has-text-centered">
           <div className="content">
             <p className="is-size-7 mb-1">
-              <strong>To Do List App</strong> - Curso de Frontend - Ada ITW
+              <strong> &copy; 2025 To Do List App. All rights reserved.</strong> - Frontend - Ada ITW
             </p>
             <p className="is-size-7 has-text-grey">
-              Desarrollado con 💖 por Radha con React + Bulma + Yarn 🤗
+              Desarrollado con 💖 por: Radha D.B. Con React + Bulma + Yarn 🤗
             </p>
           </div>
         </div>
