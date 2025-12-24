@@ -49,7 +49,7 @@ Pasos
 Clona el repositorio
 
 bash
-git clone https://github.com/tuusuario/todolist_tpfinal.git  
+git clone https://github.com/RadhaBerjman/todolist_tpfinal.git  
 cd todolist_tpfinal  
 Instala las dependencias
 
