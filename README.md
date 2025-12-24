@@ -1,16 +1,219 @@
-# React + Vite
+📋 To Do List App
+Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarrollada con React y Bulma CSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[App completa]<img width="1200" height="848" alt="appCompleta" src="https://github.com/user-attachments/assets/f7a33fa7-f549-40b8-a434-e6caaae2b587" />
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Características:
 
-## React Compiler
+✅ Agregar nuevas tareas con contador de caracteres
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Marcar tareas como completadas con checkboxes interactivos
 
-## Expanding the ESLint configuration
+✅ Filtrar tareas (Todas, Pendientes, Completadas)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Eliminar tareas individuales con confirmación
+
+✅ Limpiar todas las tareas completadas de una vez
+
+✅ Persistencia de datos con LocalStorage
+
+✅ Diseño totalmente responsivo para móviles y desktop
+
+✅ Interfaz intuitiva con feedback visual inmediato
+
+<p>
+  <strong>🌐 Demo en vivo:</strong> 
+  <a href="https://todolisttpfinalvercel-8tyg8dtvp-radhaberjmans-projects.vercel.app/" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    https://todolisttpfinalvercel.vercel.app
+  </a>
+</p>
+
+
+
+🛠️ Tecnologías utilizadas
+Tecnología	Propósito
+React 18	Biblioteca principal para la interfaz
+Vite	Herramienta de construcción y desarrollo ultrarrápida
+Bulma CSS	Framework CSS moderno y sin dependencias JS
+Font Awesome	Iconos vectoriales para una mejor UX
+LocalStorage API	Persistencia de datos en el navegador
+📦 Instalación y uso local
+Prerrequisitos
+Node.js (versión 16 o superior)
+
+Yarn o npm
+
+Pasos
+Clona el repositorio
+
+bash
+git clone https://github.com/RadhaBerjman/todolist_tpfinal.git  
+cd todolist_tpfinal  
+Instala las dependencias
+
+bash
+yarn install  
+# o  
+npm install  
+Inicia el servidor de desarrollo
+
+bash
+yarn dev  
+# o  
+npm run dev  
+Abre tu navegador en
+http://localhost:5173
+
+🎯 Cómo usar la app
+1. Agregar una nueva tarea
+Escribe tu tarea en el campo "¿Qué necesitas hacer?"
+
+Observa el contador de caracteres (máximo 200)
+
+Presiona "Agregar" o la tecla Enter
+
+[Agregando tarea]<img width="1055" height="224" alt="agregarTarea" src="https://github.com/user-attachments/assets/3f8736e2-a666-442b-a90b-eb6919ab7616" />
+
+
+2. Gestionar tareas existentes
+Marcar como completada: Haz clic en el checkbox ✓
+
+Eliminar una tarea: Haz clic en el icono 🗑️
+
+Confirmación: La app pedirá confirmación antes de eliminar
+
+[Eliminar tarea]<img width="665" height="191" alt="eliminar" src="https://github.com/user-attachments/assets/10feb562-8086-48a4-8cc3-aae1ce2ccaeb" />
+
+
+3. Filtrar tareas
+Usa los botones en la parte superior:
+
+Todas: Muestra todas las tareas
+
+Pendientes: Solo tareas no completadas
+
+Completadas: Solo tareas finalizadas
+
+[Filtrar tarea]<img width="1029" height="344" alt="filtrar" src="https://github.com/user-attachments/assets/7ad5029d-8e1c-42b1-a429-acdac7d58683" />
+
+
+4. Limpieza masiva
+Haz clic en "Eliminar completadas"
+
+Confirma en el diálogo emergente
+
+¡Todas las tareas completadas desaparecerán!
+
+[Eliminar todas]<img width="1195" height="706" alt="eliminarCompletadas" src="https://github.com/user-attachments/assets/7c862cbd-0ba4-4541-a9d0-fd39f34b2ecc" />
+
+
+📊 Estadísticas en tiempo real
+La app muestra automáticamente:
+
+Total de tareas en tu lista
+
+Tareas pendientes por completar
+
+Contador por categoría en los filtros
+
+🎨 Diseño y UX
+Características de diseño
+Paleta de colores suave con tonos primarios de Bulma
+
+Feedback visual en todas las interacciones
+
+Animaciones sutiles para transiciones
+
+Tipografía legible y espaciado adecuado
+
+Iconografía consistente con Font Awesome
+
+Responsive Design
+Mobile-first approach
+
+Adaptación perfecta a tablets y desktop
+
+Botones táctiles adecuados para móviles
+
+Layout flexible que mantiene la funcionalidad
+
+🔧 Estructura del proyecto
+text
+todolist_tpfinal/  
+├── src/  
+│   ├── components/  
+│   │   └── TodoList.jsx      # Componente principal  
+│   ├── styles/  
+│   │   ├── global.css        # Estilos globales  
+│   │   └── custom.css        # Personalizaciones  
+│   ├── App.jsx              # Componente raíz  
+│   └── main.jsx             # Punto de entrada  
+├── public/                  # Assets estáticos  
+├── index.html              # Template HTML  
+└── package.json            # Dependencias y scripts  
+📝 Scripts disponibles
+Comando	Descripción
+yarn dev	Inicia servidor de desarrollo
+yarn build	Crea versión optimizada para producción
+yarn preview	Previsualiza la build localmente
+🌐 Deployment
+Esta aplicación está desplegada en Vercel, aprovechando:
+
+✅ Despliegue automático con cada push a GitHub
+
+✅ CDN global para carga rápida en cualquier ubicación
+
+✅ SSL automático (HTTPS gratuito)
+
+✅ Escalabilidad automática
+
+🤝 Contribuir
+Las contribuciones son bienvenidas. Por favor:
+
+Haz fork del proyecto
+
+Crea una rama para tu feature (git checkout -b feature/AmazingFeature)
+
+Commit tus cambios (git commit -m 'Add AmazingFeature')
+
+Push a la rama (git push origin feature/AmazingFeature)
+
+Abre un Pull Request
+
+📄 Licencia
+Distribuido bajo la licencia MIT. Ver LICENSE para más información.
+
+👏 Agradecimientos
+Ada ITW por el curso de Frontend y a todas mis profesoras, 
+en especial a mi profesora Cintia Páez https://github.com/cintyy73 Muchas gracias profe! 🤗💖
+ 
+Comunidad React por los recursos y documentación
+
+Bulma CSS por el excelente framework
+
+Vercel por el hosting gratuito
+
+✍️ Autora:
+Radha D.B.– Estudiante de desarrollo frontend
+
+📧 Correo: radhaberjman@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/radha-yemay%C3%A1-berjman-a4012422b/
+
+🐙 GitHub: https://github.com/RadhaBerjman
+
+<div align="center">
+¡Gracias por usar To Do List App!
+¿Tienes preguntas o sugerencias? ¡Abre un issue en GitHub!
+
+https://img.shields.io/badge/Deployed%2520on-Vercel-black?style=for-the-badge&logo=vercel
+https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+https://img.shields.io/badge/Bulma-00D1B2?style=for-the-badge&logo=bulma&logoColor=white
+
+</div>
+Última actualización: Diciembre 2025
+
+📋 ¡Organiza tu vida, una tarea a la vez! 😉🚀
