@@ -22,8 +22,8 @@ Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarr
 ✅ Interfaz intuitiva con feedback visual inmediato
 
 <a 
-  href="https://todolisttpfinalvercel-8tyg8dtvp-radhaberjmans-projects.vercel.app/"
-  target="_blank"
+  href="https://todolisttpfinalvercel-8tyg8dtvp-radhaberjmans-projects.vercel.app/" 
+  target="_blank" 
   rel="noopener noreferrer"
 >
   Ver la app en vivo 🚀
