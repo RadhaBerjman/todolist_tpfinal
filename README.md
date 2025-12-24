@@ -4,7 +4,8 @@ Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarr
 [App completa]<img width="1200" height="848" alt="appCompleta" src="https://github.com/user-attachments/assets/f7a33fa7-f549-40b8-a434-e6caaae2b587" />
 
 
-✨ Características
+✨ Características:
+
 ✅ Agregar nuevas tareas con contador de caracteres
 
 ✅ Marcar tareas como completadas con checkboxes interactivos
