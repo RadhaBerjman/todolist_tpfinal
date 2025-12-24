@@ -22,9 +22,7 @@ Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarr
 ✅ Interfaz intuitiva con feedback visual inmediato
 
 🚀 Demo en vivo
-👉 Prueba la app aquí
-
-https://i.imgur.com/YOUR_IMAGE_ID2.png
+👉 Prueba la app aquí: (https://todolisttpfinalvercel-8tyg8dtvp-radhaberjmans-projects.vercel.app/)
 
 🛠️ Tecnologías utilizadas
 Tecnología	Propósito
