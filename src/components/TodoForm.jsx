@@ -49,7 +49,7 @@ const TodoForm = ({ onAddTodo }) => {
                             <span>Nueva tarea</span>
                         </span>
                     </label>
-                    
+
                     <div className="field has-addons">
                         <div className="control is-expanded">
                             <input
@@ -71,14 +71,14 @@ const TodoForm = ({ onAddTodo }) => {
                                 className="button is-primary"
                                 disabled={!inputValue.trim()} // Deshabilita el botón si el input está vacío o solo tiene espacios
                             >
-                                <span className="icon"> 
+                                <span className="icon">
                                     <i className="fas fa-plus"></i>
                                 </span>
                                 <span>Agregar</span>
                             </button>
                         </div>
                     </div>
-                    
+
                     {/* Mensaje de error*/}
                     {error && (
                         <p className="help is-danger mt-1">
@@ -90,7 +90,7 @@ const TodoForm = ({ onAddTodo }) => {
                             </span>
                         </p>
                     )}
-                    
+
                     {/* Contador de caracteres */}
                     <p className="help has-text-right mt-1">
                         {inputValue.length}/200

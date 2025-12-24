@@ -21,19 +21,19 @@ export const saveTodos = (todos) => {
 export const loadTodos = () => {
   try {
     const rawData = localStorage.getItem(STORAGE_KEY);
-    
+
     if (!rawData) {
       return [];
     }
-    
+
     const data = JSON.parse(rawData);
-    
+
     // Verificar estructura
     if (data && Array.isArray(data.todos)) {
       console.log('📂 Tareas cargadas:', data.todos.length);
       return data.todos;
     }
-    
+
     return [];
   } catch (error) {
     console.error('❌ Error cargando:', error);

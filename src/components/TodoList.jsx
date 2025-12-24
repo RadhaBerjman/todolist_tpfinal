@@ -98,7 +98,7 @@ const TodoList = () => { //
                             <div className="control">
                                 <div className="select is-small">
                                     <select
-                                        value={filter} 
+                                        value={filter}
                                         onChange={(e) => setFilter(e.target.value)} // Actualiza el filtro al cambiar la selección tomando el valor del evento.
                                     >
                                         <option value="all">Todas ({totalTodos})</option> {/* Muestra el conteo total de tareas */}

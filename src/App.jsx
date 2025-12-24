@@ -5,10 +5,10 @@ import TodoList from './components/TodoList.jsx';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
-  return ( 
-    <div className="App"> 
+  return (
+    <div className="App">
       {/* HEADER */}
-      <section className="hero is-primary is-small is-fullwidth"> 
+      <section className="hero is-primary is-small is-fullwidth">
         <div className="hero-body py-4">
           <div className="container is-fluid">
             <div className="has-text-centered">
@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
       </section>
-      
+
       {/* CONTENIDO PRINCIPAL */}
       <section className="section py-5">
         <div className="container">
@@ -39,7 +39,7 @@ function App() {
           </div>
         </div>
       </section>
-      
+
       {/* FOOTER */}
       <footer className="footer py-4 full-width">
         <div className="container has-text-centered">
