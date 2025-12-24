@@ -1,7 +1,7 @@
 📋 To Do List App
 Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarrollada con React y Bulma CSS.
 
-![App completa]<img width="1200" height="848" alt="appCompleta" src="https://github.com/user-attachments/assets/f7a33fa7-f549-40b8-a434-e6caaae2b587" />
+[App completa]<img width="1200" height="848" alt="appCompleta" src="https://github.com/user-attachments/assets/f7a33fa7-f549-40b8-a434-e6caaae2b587" />
 
 
 ✨ Características
@@ -68,7 +68,7 @@ Observa el contador de caracteres (máximo 200)
 
 Presiona "Agregar" o la tecla Enter
 
-https://i.imgur.com/YOUR_IMAGE_ID3.png
+[Agregando tarea]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\agregarTarea.png
 
 2. Gestionar tareas existentes
 Marcar como completada: Haz clic en el checkbox ✓
@@ -77,7 +77,7 @@ Eliminar una tarea: Haz clic en el icono 🗑️
 
 Confirmación: La app pedirá confirmación antes de eliminar
 
-https://i.imgur.com/YOUR_IMAGE_ID4.png
+[Eliminar tarea]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\eliminar.png
 
 3. Filtrar tareas
 Usa los botones en la parte superior:
@@ -88,7 +88,7 @@ Pendientes: Solo tareas no completadas
 
 Completadas: Solo tareas finalizadas
 
-https://i.imgur.com/YOUR_IMAGE_ID5.png
+[Filtrar tarea]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\filtrar.png
 
 4. Limpieza masiva
 Haz clic en "Eliminar completadas"
@@ -97,7 +97,7 @@ Confirma en el diálogo emergente
 
 ¡Todas las tareas completadas desaparecerán!
 
-https://i.imgur.com/YOUR_IMAGE_ID6.png
+[Eliminar todas]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\eliminarCompletadas.png
 
 📊 Estadísticas en tiempo real
 La app muestra automáticamente:
@@ -176,8 +176,9 @@ Abre un Pull Request
 Distribuido bajo la licencia MIT. Ver LICENSE para más información.
 
 👏 Agradecimientos
-Ada ITW por el curso de Frontend
-
+Ada ITW por el curso de Frontend y a todas mis profesoras, 
+en especial a mi profesora Cintia Páez https://github.com/cintyy73 Muchas gracias profe! 🤗💖
+ 
 Comunidad React por los recursos y documentación
 
 Bulma CSS por el excelente framework
@@ -185,13 +186,13 @@ Bulma CSS por el excelente framework
 Vercel por el hosting gratuito
 
 ✍️ Autor
-Radha – Estudiante de desarrollo frontend
+Radha D.B.– Estudiante de desarrollo frontend
 
-📧 Correo: tuemail@ejemplo.com
+📧 Correo: radhaberjman@gmail.com
 
-💼 LinkedIn: linkedin.com/in/tuusuario
+💼 LinkedIn: https://www.linkedin.com/in/radha-yemay%C3%A1-berjman-a4012422b/
 
-🐙 GitHub: github.com/tuusuario
+🐙 GitHub: github.com/RadhaBerjman
 
 <div align="center">
 ¡Gracias por usar To Do List App!
@@ -204,4 +205,4 @@ https://img.shields.io/badge/Bulma-00D1B2?style=for-the-badge&logo=bulma&logoCol
 </div>
 Última actualización: Diciembre 2025
 
-📋 ¡Organiza tu vida, una tarea a la vez! 🚀
+📋 ¡Organiza tu vida, una tarea a la vez! 😉🚀
