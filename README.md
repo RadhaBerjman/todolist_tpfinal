@@ -75,7 +75,8 @@ Observa el contador de caracteres (máximo 200)
 
 Presiona "Agregar" o la tecla Enter
 
-[Agregando tarea][Agregando tarea] <img width="1200" height="848" alt="appCompleta" src="C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\agregarTarea.png"/>
+[Agregando tarea]<img width="1055" height="224" alt="agregarTarea" src="https://github.com/user-attachments/assets/3f8736e2-a666-442b-a90b-eb6919ab7616" />
+
 
 2. Gestionar tareas existentes
 Marcar como completada: Haz clic en el checkbox ✓
@@ -84,7 +85,8 @@ Eliminar una tarea: Haz clic en el icono 🗑️
 
 Confirmación: La app pedirá confirmación antes de eliminar
 
-[Eliminar tarea]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\eliminar.png
+[Eliminar tarea]<img width="665" height="191" alt="eliminar" src="https://github.com/user-attachments/assets/10feb562-8086-48a4-8cc3-aae1ce2ccaeb" />
+
 
 3. Filtrar tareas
 Usa los botones en la parte superior:
@@ -95,7 +97,8 @@ Pendientes: Solo tareas no completadas
 
 Completadas: Solo tareas finalizadas
 
-[Filtrar tarea]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\filtrar.png
+[Filtrar tarea]<img width="1029" height="344" alt="filtrar" src="https://github.com/user-attachments/assets/7ad5029d-8e1c-42b1-a429-acdac7d58683" />
+
 
 4. Limpieza masiva
 Haz clic en "Eliminar completadas"
@@ -104,7 +107,8 @@ Confirma en el diálogo emergente
 
 ¡Todas las tareas completadas desaparecerán!
 
-[Eliminar todas]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\eliminarCompletadas.png
+[Eliminar todas]<img width="1195" height="706" alt="eliminarCompletadas" src="https://github.com/user-attachments/assets/7c862cbd-0ba4-4541-a9d0-fd39f34b2ecc" />
+
 
 📊 Estadísticas en tiempo real
 La app muestra automáticamente:
