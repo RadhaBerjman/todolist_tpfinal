@@ -21,20 +21,15 @@ Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarr
 
 ✅ Interfaz intuitiva con feedback visual inmediato
 
-<div class="card has-background-primary-light">
-  <div class="card-content">
-    <p class="title is-4">✨ Demo en vivo</p>
-    <p class="subtitle is-6">Prueba la aplicación ahora mismo:</p>
-    <a 
-      href="https://todolisttpfinalvercel-8tyg8dtvp-radhaberjmans-projects.vercel.app/" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      class="button is-primary"
-    >
-      Abrir aplicación
-    </a>
-  </div>
-</div>
+<p>
+  <strong>🌐 Demo en vivo:</strong> 
+  <a href="https://todolisttpfinalvercel-8tyg8dtvp-radhaberjmans-projects.vercel.app/" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    https://todolisttpfinalvercel.vercel.app
+  </a>
+</p>
+
 
 
 🛠️ Tecnologías utilizadas
@@ -196,14 +191,14 @@ Bulma CSS por el excelente framework
 
 Vercel por el hosting gratuito
 
-✍️ Autor
+✍️ Autora:
 Radha D.B.– Estudiante de desarrollo frontend
 
 📧 Correo: radhaberjman@gmail.com
 
 💼 LinkedIn: https://www.linkedin.com/in/radha-yemay%C3%A1-berjman-a4012422b/
 
-🐙 GitHub: github.com/RadhaBerjman
+🐙 GitHub: https://github.com/RadhaBerjman
 
 <div align="center">
 ¡Gracias por usar To Do List App!
