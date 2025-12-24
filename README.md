@@ -75,7 +75,7 @@ Observa el contador de caracteres (máximo 200)
 
 Presiona "Agregar" o la tecla Enter
 
-[Agregando tarea]C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\agregarTarea.png
+[Agregando tarea] C:\Users\radha\OneDrive\Documents\ada_2025\todolist_tpfinal\public\images\agregarTarea.png
 
 2. Gestionar tareas existentes
 Marcar como completada: Haz clic en el checkbox ✓
