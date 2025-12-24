@@ -24,7 +24,7 @@ Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarr
 <div class="card has-background-primary-light">
   <div class="card-content">
     <p class="title is-4">✨ Demo en vivo</p>
-    <p class="subtitle is-6">Prueba la aplicación ahora mismo</p>
+    <p class="subtitle is-6">Prueba la aplicación ahora mismo:</p>
     <a 
       href="https://todolisttpfinalvercel-8tyg8dtvp-radhaberjmans-projects.vercel.app/" 
       target="_blank" 
@@ -35,6 +35,7 @@ Una aplicación web moderna y elegante para gestionar tus tareas diarias, desarr
     </a>
   </div>
 </div>
+
 
 🛠️ Tecnologías utilizadas
 Tecnología	Propósito
