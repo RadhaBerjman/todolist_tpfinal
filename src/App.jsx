@@ -2,6 +2,7 @@ import 'bulma/css/bulma.min.css';
 import './styles/global.css';
 import './styles/custom.css';
 import TodoList from './components/TodoList.jsx';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return ( 
